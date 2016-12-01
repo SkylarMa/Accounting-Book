@@ -104,31 +104,7 @@ public class AccountingBook extends JFrame
 					switch (result_submit)
 					{
 						case JOptionPane.YES_OPTION:
-							ArrayList<String> dateList = new ArrayList<>();
-							ArrayList<String> categoryList = new ArrayList<>();
-							ArrayList<String> detailList = new ArrayList<>();
-							ArrayList<String> amountList = new ArrayList<>();
-							
-							LocalDate localDate = datePicker.getValue();
-							dateList.add(localDate.toString());
-							categoryList.add(box1.getSelectedItem().toString());
-							detailList.add(jTextField1.getText());
-							amountList.add(jFormattedTextField.getText());
-							
-							for (int i=0; i<dateList.size(); i++)
-							{
-								String strDateList = dateList.get(i);
-								String strCategoryList = categoryList.get(i);
-								String strDetailList = detailList.get(i);
-								String strAmountList = amountList.get(i);
-								output  = output + strDateList + "   " + strCategoryList + "   " + strDetailList + "   " + strAmountList + "\n";
-							}
-					
-							System.out.println(" --- test ---\n" + dateList + " " + categoryList + " " + detailList + " " + amountList);
-							
-			 		   	jTextField1.setText("");
-							jFormattedTextField.setText("");
-							datePicker.setValue(null);
+							// --- DIY ---
 							break;
 						case JOptionPane.NO_OPTION:
 							break;
@@ -336,6 +312,6 @@ public class AccountingBook extends JFrame
 
 	public static void main(String dummy[])
 	{
-		new AccountingBook();
+		// ---- DIY ----
 	}
 }
