@@ -49,14 +49,14 @@ public class AccountingBook extends JFrame
 		frame.getContentPane().setLayout(new GridBagLayout()); // set layout species
 		frame.add(fxPanel); // put faPanel into JFrame
 		StackPane root = new StackPane(); // StackPane allows many components stack together, and combines into a new component
-      Scene scene = new Scene(root); // Scene is the class and the container for all content in a scene graph. The background of the scene is filled as specified by the fill property
-      
-      // --- setDatePicker ---
-      datePicker = new DatePicker();
-      root.getChildren().add(datePicker);
-      // After the StackPane is set, the object is added to the StackPane with the getChildren().Add() method of the Pane class
-      fxPanel.setScene(scene);
-      
+		Scene scene = new Scene(root); // Scene is the class and the container for all content in a scene graph. The background of the scene is filled as specified by the fill property
+		
+		// --- setDatePicker ---
+		datePicker = new DatePicker();
+		root.getChildren().add(datePicker);
+		// After the StackPane is set, the object is added to the StackPane with the getChildren().Add() method of the Pane class
+		fxPanel.setScene(scene);
+		
 		// --- setAmount ---
 		MaskFormatter formatter = null;
 		try
